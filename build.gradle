@@ -1,0 +1,34 @@
+
+
+plugins {
+
+    id 'java-library'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+
+    //Cucumber-java para poderlo utilizat con el lenguaje java
+	implementation group: 'io.cucumber', name: 'cucumber-java', version: '5.0.0'
+
+    
+    //Cucumber-JUnit para poder ejecutar pruebas con JUnit y Cucumber
+	compile group: 'io.cucumber', name: 'cucumber-junit', version: '5.0.0'
+    
+    //Hamcrest proposito de valiadacion
+    // https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all
+	compile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+    
+    
+    //Seleniun para automatizacion
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.5'
+
+    compile 'junit:junit:4.12'
+}
+
+
